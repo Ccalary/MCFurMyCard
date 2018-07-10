@@ -128,13 +128,18 @@
     if (self.type == 1){
         [self.frontBtn setTitle:@"" forState:UIControlStateNormal];
         self.frontImageView.image = image;
-        NSData *data = UIImageJPEGRepresentation(image, 0.1);
-        [MCUserHelper mc_setImageData:data WithKey:[NSString stringWithFormat:@"front%@",dateStr]];
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            NSData *data = UIImageJPEGRepresentation(image, 0.1);
+            [MCUserHelper mc_setImageData:data WithKey:[NSString stringWithFormat:@"front%@",dateStr]];
+        });
+       
     }else {
         [self.backBtn setTitle:@"" forState:UIControlStateNormal];
         self.backImageView.image = image;
-        NSData *data = UIImageJPEGRepresentation(image, 0.1);
-         [MCUserHelper mc_setImageData:data WithKey:[NSString stringWithFormat:@"back%@",dateStr]];
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            NSData *data = UIImageJPEGRepresentation(image, 0.1);
+            [MCUserHelper mc_setImageData:data WithKey:[NSString stringWithFormat:@"back%@",dateStr]];
+        });
     }
 }
 @end

@@ -14,4 +14,5 @@
 - (void)addMCModel:(MCModel *)model;
 - (NSMutableArray *)getAllModel;
 - (void)deleteModel:(MCModel *)model;
+- (void)deleteAllModel;
 @end

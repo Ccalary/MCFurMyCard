@@ -12,6 +12,7 @@
 
 @interface MCCardInfoVC ()
 @property (weak, nonatomic) IBOutlet UIImageView *frontImageView;
+
 @property (weak, nonatomic) IBOutlet UIImageView *backImageView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *numberLabel;

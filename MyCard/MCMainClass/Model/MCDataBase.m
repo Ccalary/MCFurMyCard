@@ -133,4 +133,10 @@ static MCDataBase *dataBase = nil;
     [_db executeUpdate:@"DELETE FROM mcmodel WHERE addTime = ?",model.addTime];
     [_db close];
 }
+
+- (void)deleteAllModel{
+    [_db open];
+    [_db executeUpdate:@"DELETE FROM mcmodel"];
+    [_db close];
+}
 @end

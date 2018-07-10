@@ -13,7 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CMCardInfoVC">
             <connections>
                 <outlet property="backImageView" destination="bre-d0-rEj" id="Pnz-lH-9qp"/>
-                <outlet property="frontImageView" destination="7IK-xx-zd9" id="CjJ-by-68q"/>
+                <outlet property="frontImageView" destination="7IK-xx-zd9" id="rSi-kV-6Vg"/>
                 <outlet property="nameLabel" destination="rJV-po-15w" id="ack-sy-tM5"/>
                 <outlet property="numberLabel" destination="Awq-cQ-ssb" id="RCD-we-eVb"/>
                 <outlet property="remarkLabel" destination="Als-XV-HfK" id="dfm-WR-wUI"/>

@@ -12,6 +12,7 @@
 #import "MCEmailViewController.h"
 #import "MCUserInfoViewController.h"
 #import "MCLoginViewController.h"
+#import "MCDataBase.h"
 
 @interface MCMeViewController ()<UITableViewDelegate, UITableViewDataSource,UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @property (strong, nonatomic) NSArray *sourceArray;
@@ -114,6 +115,7 @@
         [MCUserHelper mc_setHeaderData:nil];
         [MCUserHelper mc_setUserName:nil];
         [MCUserHelper mc_setLoginWithString:@"0"];
+        [[MCDataBase sharedDataBase] deleteAllModel];
         [self loginSuccessNotice];
         [LCProgressHUD showSuccess:@"退出成功"];
     }]];
