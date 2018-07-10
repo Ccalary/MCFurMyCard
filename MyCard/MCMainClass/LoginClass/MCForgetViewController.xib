@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MCForgetViewController">
+            <connections>
+                <outlet property="emailTextField" destination="sCM-QK-4Zx" id="Qkz-R9-dCl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邮箱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hc-X7-LVE">
+                    <rect key="frame" x="15" y="60" width="35" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="7Eh-Fc-5H9"/>
+                        <constraint firstAttribute="width" constant="35" id="95V-Yq-DGe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入邮箱" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sCM-QK-4Zx">
+                    <rect key="frame" x="60" y="53" width="300" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="lTD-5e-c1y"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sCM-QK-4Zx" firstAttribute="centerY" secondItem="5hc-X7-LVE" secondAttribute="centerY" id="0jf-40-AcA"/>
+                <constraint firstItem="sCM-QK-4Zx" firstAttribute="leading" secondItem="5hc-X7-LVE" secondAttribute="trailing" constant="10" id="Oh1-bn-XNs"/>
+                <constraint firstItem="5hc-X7-LVE" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="40" id="QFt-vo-mRd"/>
+                <constraint firstItem="5hc-X7-LVE" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="tDK-yi-b6C"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="sCM-QK-4Zx" secondAttribute="trailing" constant="15" id="uKr-fj-t1K"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MCHomeViewController">
+            <connections>
+                <outlet property="bannerView" destination="4T7-9v-hWU" id="4XI-zx-uBW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="huaban_3" translatesAutoresizingMaskIntoConstraints="NO" id="xjy-4d-Z40">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4T7-9v-hWU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="h6E-5x-1iJ"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yf-4a-EIq">
+                    <rect key="frame" x="0.0" y="175" width="170" height="170"/>
+                    <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="170" id="MLr-6T-Ig9"/>
+                        <constraint firstAttribute="width" constant="170" id="yK8-Au-aVe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="证件卡" image="id_card_45">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cardBtnAction:" destination="-1" eventType="touchUpInside" id="f2L-wP-xQN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUF-9u-5rZ">
+                    <rect key="frame" x="0.0" y="365" width="170" height="170"/>
+                    <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="9WE-Yr-ARC"/>
+                        <constraint firstAttribute="height" constant="170" id="Z13-yY-r0c"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="会员卡" image="vip_card_45">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cardBtnAction:" destination="-1" eventType="touchUpInside" id="baq-kN-Xla"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5h-st-Nir">
+                    <rect key="frame" x="185" y="300" width="190" height="110"/>
+                    <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="5z4-52-d4x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="电子卡" image="电子卡">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cardBtnAction:" destination="-1" eventType="touchUpInside" id="m7g-wB-qjH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lv-EE-81K">
+                    <rect key="frame" x="185" y="175" width="190" height="110"/>
+                    <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="110" id="2k4-Uf-m5d"/>
+                        <constraint firstAttribute="height" constant="110" id="axd-tU-LGJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="购物卡" image="百货购物卡">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cardBtnAction:" destination="-1" eventType="touchUpInside" id="eWL-mj-4KE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEc-Me-aiK">
+                    <rect key="frame" x="185" y="425" width="190" height="110"/>
+                    <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="W5v-Kd-sbk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="其他卡" image="其他">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cardBtnAction:" destination="-1" eventType="touchUpInside" id="WOB-DZ-avO"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="～我滴卡～" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGI-h9-QyM">
+                    <rect key="frame" x="0.0" y="626" width="375" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="qIN-AC-DDt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    <color key="highlightedColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="G5h-st-Nir" firstAttribute="top" secondItem="9lv-EE-81K" secondAttribute="bottom" constant="15" id="05G-3A-Cde"/>
+                <constraint firstItem="9lv-EE-81K" firstAttribute="leading" secondItem="6yf-4a-EIq" secondAttribute="trailing" constant="15" id="3qT-0c-sii"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="LGI-h9-QyM" secondAttribute="trailing" id="9um-Lu-0pv"/>
+                <constraint firstItem="LEc-Me-aiK" firstAttribute="centerX" secondItem="9lv-EE-81K" secondAttribute="centerX" id="Es2-hf-tVL"/>
+                <constraint firstItem="9lv-EE-81K" firstAttribute="top" secondItem="6yf-4a-EIq" secondAttribute="top" id="FlK-H4-icZ"/>
+                <constraint firstItem="xjy-4d-Z40" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IDR-yW-Nbu"/>
+                <constraint firstItem="BUF-9u-5rZ" firstAttribute="top" secondItem="6yf-4a-EIq" secondAttribute="bottom" constant="20" id="KlB-um-5ST"/>
+                <constraint firstItem="9lv-EE-81K" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="L7y-3p-gqV"/>
+                <constraint firstItem="4T7-9v-hWU" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="LU2-W0-HUy"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="LGI-h9-QyM" secondAttribute="bottom" constant="20" id="LrY-7d-eoo"/>
+                <constraint firstItem="xjy-4d-Z40" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="N3l-Mi-UQ8"/>
+                <constraint firstItem="4T7-9v-hWU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Piz-Lh-3En"/>
+                <constraint firstItem="LEc-Me-aiK" firstAttribute="trailing" secondItem="9lv-EE-81K" secondAttribute="trailing" id="Rcd-03-fgT"/>
+                <constraint firstItem="LEc-Me-aiK" firstAttribute="leading" secondItem="9lv-EE-81K" secondAttribute="leading" id="Sek-gf-hYf"/>
+                <constraint firstItem="G5h-st-Nir" firstAttribute="trailing" secondItem="9lv-EE-81K" secondAttribute="trailing" id="UeB-KN-4bT"/>
+                <constraint firstItem="xjy-4d-Z40" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="W5j-QY-V5n"/>
+                <constraint firstItem="4T7-9v-hWU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="X5z-Ta-wcg"/>
+                <constraint firstItem="4T7-9v-hWU" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="ZGe-MO-WNk"/>
+                <constraint firstItem="G5h-st-Nir" firstAttribute="leading" secondItem="9lv-EE-81K" secondAttribute="leading" id="bZ7-zf-hBa"/>
+                <constraint firstItem="LEc-Me-aiK" firstAttribute="top" secondItem="G5h-st-Nir" secondAttribute="bottom" constant="15" id="bdR-yJ-TXY"/>
+                <constraint firstItem="6yf-4a-EIq" firstAttribute="top" secondItem="4T7-9v-hWU" secondAttribute="bottom" constant="15" id="f9o-tj-bbU"/>
+                <constraint firstItem="4T7-9v-hWU" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="jEk-sa-p5N"/>
+                <constraint firstItem="G5h-st-Nir" firstAttribute="centerX" secondItem="9lv-EE-81K" secondAttribute="centerX" id="kPp-8s-nBc"/>
+                <constraint firstItem="6yf-4a-EIq" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="lFp-c9-SNk"/>
+                <constraint firstItem="4T7-9v-hWU" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="rSK-5o-BJ3"/>
+                <constraint firstItem="xjy-4d-Z40" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="srR-W5-ax2"/>
+                <constraint firstItem="BUF-9u-5rZ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="wtW-Ni-P1e"/>
+                <constraint firstItem="LGI-h9-QyM" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="xIT-K1-Wnw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="huaban_3" width="375" height="667"/>
+        <image name="id_card_45" width="45" height="32"/>
+        <image name="vip_card_45" width="45" height="45"/>
+        <image name="其他" width="45" height="45"/>
+        <image name="电子卡" width="45" height="33"/>
+        <image name="百货购物卡" width="45" height="45"/>
+    </resources>
+</document>

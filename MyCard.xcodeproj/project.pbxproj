@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D522C1320F3422B00DD5938 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C1220F3422B00DD5938 /* AppDelegate.m */; };
+		0D522C1620F3422B00DD5938 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C1520F3422B00DD5938 /* ViewController.m */; };
+		0D522C1920F3422B00DD5938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D522C1720F3422B00DD5938 /* Main.storyboard */; };
+		0D522C1B20F3422B00DD5938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D522C1A20F3422B00DD5938 /* Assets.xcassets */; };
+		0D522C1E20F3422B00DD5938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D522C1C20F3422B00DD5938 /* LaunchScreen.storyboard */; };
+		0D522C2120F3422B00DD5938 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C2020F3422B00DD5938 /* main.m */; };
+		0D522C3320F343B800DD5938 /* CNPPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C2E20F343B800DD5938 /* CNPPopupController.m */; };
+		0D522C3420F343B800DD5938 /* LCProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0D522C3020F343B800DD5938 /* LCProgressHUD.bundle */; };
+		0D522C3520F343B800DD5938 /* LCProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C3220F343B800DD5938 /* LCProgressHUD.m */; };
+		0D522C3920F34AF800DD5938 /* MCBaseTabBaeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C3820F34AF800DD5938 /* MCBaseTabBaeController.m */; };
+		0D522C4920F34B9B00DD5938 /* MCBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C4820F34B9B00DD5938 /* MCBaseNavigationController.m */; };
+		0D522C4E20F34BF300DD5938 /* MCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C4D20F34BF300DD5938 /* MCTools.m */; };
+		0D522C5120F34C0A00DD5938 /* UIColor+MCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C5020F34C0A00DD5938 /* UIColor+MCColor.m */; };
+		0D522C5620F351D300DD5938 /* MCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C5420F351D300DD5938 /* MCLoginViewController.m */; };
+		0D522C5720F351D300DD5938 /* MCLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D522C5520F351D300DD5938 /* MCLoginViewController.xib */; };
+		0D522C5B20F355CC00DD5938 /* MCRigisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C5920F355CC00DD5938 /* MCRigisterViewController.m */; };
+		0D522C5C20F355CC00DD5938 /* MCRigisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D522C5A20F355CC00DD5938 /* MCRigisterViewController.xib */; };
+		0D522C6320F3576B00DD5938 /* MCForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C6120F3576B00DD5938 /* MCForgetViewController.m */; };
+		0D522C6420F3576B00DD5938 /* MCForgetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D522C6220F3576B00DD5938 /* MCForgetViewController.xib */; };
+		0D522C6720F35F5F00DD5938 /* MCUserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C6620F35F5F00DD5938 /* MCUserHelper.m */; };
+		0D522C6B20F360DC00DD5938 /* MCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C6920F360DC00DD5938 /* MCHomeViewController.m */; };
+		0D522C6C20F360DC00DD5938 /* MCHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D522C6A20F360DC00DD5938 /* MCHomeViewController.xib */; };
+		0D522C7020F3B4D900DD5938 /* MCAddCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C6E20F3B4D900DD5938 /* MCAddCardVC.m */; };
+		0D522C7120F3B4D900DD5938 /* MCAddCardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D522C6F20F3B4D900DD5938 /* MCAddCardVC.xib */; };
+		0D522C7420F3B5D600DD5938 /* MCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C7320F3B5D600DD5938 /* MCModel.m */; };
+		0D522C7720F3B67C00DD5938 /* MCDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C7620F3B67C00DD5938 /* MCDataBase.m */; };
+		0D522C7B20F3BF9900DD5938 /* MCShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C7920F3BF9900DD5938 /* MCShowViewController.m */; };
+		0D522C7C20F3BF9900DD5938 /* MCShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D522C7A20F3BF9900DD5938 /* MCShowViewController.xib */; };
+		0D522C8020F3C8DB00DD5938 /* MCCardInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C7E20F3C8DB00DD5938 /* MCCardInfoVC.m */; };
+		0D522C8120F3C8DB00DD5938 /* MCCardInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D522C7F20F3C8DB00DD5938 /* MCCardInfoVC.xib */; };
+		0D522C8520F3CC8700DD5938 /* MCMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C8320F3CC8700DD5938 /* MCMeViewController.m */; };
+		0D522C8D20F4438A00DD5938 /* MCNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C8B20F4438A00DD5938 /* MCNoticeViewController.m */; };
+		0D522C8E20F4438A00DD5938 /* MCNoticeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D522C8C20F4438A00DD5938 /* MCNoticeViewController.xib */; };
+		0D522C9220F4456C00DD5938 /* RunLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C9120F4456C00DD5938 /* RunLabelView.m */; };
+		0D522C9620F44CF000DD5938 /* MCEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C9420F44CF000DD5938 /* MCEmailViewController.m */; };
+		0D522C9720F44CF000DD5938 /* MCEmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D522C9520F44CF000DD5938 /* MCEmailViewController.xib */; };
+		0D522C9B20F44E1200DD5938 /* MCEmailSurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C9920F44E1200DD5938 /* MCEmailSurViewController.m */; };
+		0D522C9C20F44E1200DD5938 /* MCEmailSurViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D522C9A20F44E1200DD5938 /* MCEmailSurViewController.xib */; };
+		0D522C9F20F4545300DD5938 /* MCHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C9E20F4545300DD5938 /* MCHeaderView.m */; };
+		0D522CA620F45CDC00DD5938 /* MCUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522CA420F45CDC00DD5938 /* MCUserInfoViewController.m */; };
+		0D522CA720F45CDD00DD5938 /* MCUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D522CA520F45CDC00DD5938 /* MCUserInfoViewController.xib */; };
+		6253A31E3A22D98AF764C254 /* Pods_MyCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2206CCC8EB11D9201FEF5972 /* Pods_MyCard.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D522C0E20F3422B00DD5938 /* MyCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D522C1120F3422B00DD5938 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0D522C1220F3422B00DD5938 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0D522C1420F3422B00DD5938 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0D522C1520F3422B00DD5938 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0D522C1820F3422B00DD5938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0D522C1A20F3422B00DD5938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D522C1D20F3422B00DD5938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0D522C1F20F3422B00DD5938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D522C2020F3422B00DD5938 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0D522C2D20F343B800DD5938 /* CNPPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPPopupController.h; sourceTree = "<group>"; };
+		0D522C2E20F343B800DD5938 /* CNPPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPPopupController.m; sourceTree = "<group>"; };
+		0D522C3020F343B800DD5938 /* LCProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LCProgressHUD.bundle; sourceTree = "<group>"; };
+		0D522C3120F343B800DD5938 /* LCProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCProgressHUD.h; sourceTree = "<group>"; };
+		0D522C3220F343B800DD5938 /* LCProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCProgressHUD.m; sourceTree = "<group>"; };
+		0D522C3620F3491200DD5938 /* MCPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCPrefixHeader.pch; sourceTree = "<group>"; };
+		0D522C3720F34AF800DD5938 /* MCBaseTabBaeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCBaseTabBaeController.h; sourceTree = "<group>"; };
+		0D522C3820F34AF800DD5938 /* MCBaseTabBaeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCBaseTabBaeController.m; sourceTree = "<group>"; };
+		0D522C4720F34B9B00DD5938 /* MCBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCBaseNavigationController.h; sourceTree = "<group>"; };
+		0D522C4820F34B9B00DD5938 /* MCBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCBaseNavigationController.m; sourceTree = "<group>"; };
+		0D522C4B20F34BDE00DD5938 /* MCMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMacros.h; sourceTree = "<group>"; };
+		0D522C4C20F34BF300DD5938 /* MCTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCTools.h; sourceTree = "<group>"; };
+		0D522C4D20F34BF300DD5938 /* MCTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCTools.m; sourceTree = "<group>"; };
+		0D522C4F20F34C0A00DD5938 /* UIColor+MCColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+MCColor.h"; sourceTree = "<group>"; };
+		0D522C5020F34C0A00DD5938 /* UIColor+MCColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MCColor.m"; sourceTree = "<group>"; };
+		0D522C5320F351D300DD5938 /* MCLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCLoginViewController.h; sourceTree = "<group>"; };
+		0D522C5420F351D300DD5938 /* MCLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCLoginViewController.m; sourceTree = "<group>"; };
+		0D522C5520F351D300DD5938 /* MCLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCLoginViewController.xib; sourceTree = "<group>"; };
+		0D522C5820F355CC00DD5938 /* MCRigisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCRigisterViewController.h; sourceTree = "<group>"; };
+		0D522C5920F355CC00DD5938 /* MCRigisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCRigisterViewController.m; sourceTree = "<group>"; };
+		0D522C5A20F355CC00DD5938 /* MCRigisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCRigisterViewController.xib; sourceTree = "<group>"; };
+		0D522C6020F3576B00DD5938 /* MCForgetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCForgetViewController.h; sourceTree = "<group>"; };
+		0D522C6120F3576B00DD5938 /* MCForgetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCForgetViewController.m; sourceTree = "<group>"; };
+		0D522C6220F3576B00DD5938 /* MCForgetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCForgetViewController.xib; sourceTree = "<group>"; };
+		0D522C6520F35F5F00DD5938 /* MCUserHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCUserHelper.h; sourceTree = "<group>"; };
+		0D522C6620F35F5F00DD5938 /* MCUserHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCUserHelper.m; sourceTree = "<group>"; };
+		0D522C6820F360DC00DD5938 /* MCHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCHomeViewController.h; sourceTree = "<group>"; };
+		0D522C6920F360DC00DD5938 /* MCHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCHomeViewController.m; sourceTree = "<group>"; };
+		0D522C6A20F360DC00DD5938 /* MCHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCHomeViewController.xib; sourceTree = "<group>"; };
+		0D522C6D20F3B4D900DD5938 /* MCAddCardVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCAddCardVC.h; sourceTree = "<group>"; };
+		0D522C6E20F3B4D900DD5938 /* MCAddCardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCAddCardVC.m; sourceTree = "<group>"; };
+		0D522C6F20F3B4D900DD5938 /* MCAddCardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCAddCardVC.xib; sourceTree = "<group>"; };
+		0D522C7220F3B5D600DD5938 /* MCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCModel.h; sourceTree = "<group>"; };
+		0D522C7320F3B5D600DD5938 /* MCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCModel.m; sourceTree = "<group>"; };
+		0D522C7520F3B67C00DD5938 /* MCDataBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCDataBase.h; sourceTree = "<group>"; };
+		0D522C7620F3B67C00DD5938 /* MCDataBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCDataBase.m; sourceTree = "<group>"; };
+		0D522C7820F3BF9900DD5938 /* MCShowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCShowViewController.h; sourceTree = "<group>"; };
+		0D522C7920F3BF9900DD5938 /* MCShowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCShowViewController.m; sourceTree = "<group>"; };
+		0D522C7A20F3BF9900DD5938 /* MCShowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCShowViewController.xib; sourceTree = "<group>"; };
+		0D522C7D20F3C8DB00DD5938 /* MCCardInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCCardInfoVC.h; sourceTree = "<group>"; };
+		0D522C7E20F3C8DB00DD5938 /* MCCardInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCCardInfoVC.m; sourceTree = "<group>"; };
+		0D522C7F20F3C8DB00DD5938 /* MCCardInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCCardInfoVC.xib; sourceTree = "<group>"; };
+		0D522C8220F3CC8700DD5938 /* MCMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMeViewController.h; sourceTree = "<group>"; };
+		0D522C8320F3CC8700DD5938 /* MCMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMeViewController.m; sourceTree = "<group>"; };
+		0D522C8A20F4438A00DD5938 /* MCNoticeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCNoticeViewController.h; sourceTree = "<group>"; };
+		0D522C8B20F4438A00DD5938 /* MCNoticeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCNoticeViewController.m; sourceTree = "<group>"; };
+		0D522C8C20F4438A00DD5938 /* MCNoticeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCNoticeViewController.xib; sourceTree = "<group>"; };
+		0D522C9020F4456C00DD5938 /* RunLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLabelView.h; sourceTree = "<group>"; };
+		0D522C9120F4456C00DD5938 /* RunLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLabelView.m; sourceTree = "<group>"; };
+		0D522C9320F44CF000DD5938 /* MCEmailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCEmailViewController.h; sourceTree = "<group>"; };
+		0D522C9420F44CF000DD5938 /* MCEmailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCEmailViewController.m; sourceTree = "<group>"; };
+		0D522C9520F44CF000DD5938 /* MCEmailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCEmailViewController.xib; sourceTree = "<group>"; };
+		0D522C9820F44E1200DD5938 /* MCEmailSurViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCEmailSurViewController.h; sourceTree = "<group>"; };
+		0D522C9920F44E1200DD5938 /* MCEmailSurViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCEmailSurViewController.m; sourceTree = "<group>"; };
+		0D522C9A20F44E1200DD5938 /* MCEmailSurViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCEmailSurViewController.xib; sourceTree = "<group>"; };
+		0D522C9D20F4545300DD5938 /* MCHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCHeaderView.h; sourceTree = "<group>"; };
+		0D522C9E20F4545300DD5938 /* MCHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCHeaderView.m; sourceTree = "<group>"; };
+		0D522CA320F45CDC00DD5938 /* MCUserInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCUserInfoViewController.h; sourceTree = "<group>"; };
+		0D522CA420F45CDC00DD5938 /* MCUserInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCUserInfoViewController.m; sourceTree = "<group>"; };
+		0D522CA520F45CDC00DD5938 /* MCUserInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCUserInfoViewController.xib; sourceTree = "<group>"; };
+		1417B834E60D3E8137C6A27F /* Pods-MyCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCard/Pods-MyCard.release.xcconfig"; sourceTree = "<group>"; };
+		2206CCC8EB11D9201FEF5972 /* Pods_MyCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7986827B3F42F07E1173AB1 /* Pods-MyCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyCard/Pods-MyCard.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D522C0B20F3422B00DD5938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6253A31E3A22D98AF764C254 /* Pods_MyCard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D522C0520F3422B00DD5938 = {
+			isa = PBXGroup;
+			children = (
+				0D522C1020F3422B00DD5938 /* MyCard */,
+				0D522C0F20F3422B00DD5938 /* Products */,
+				BEE2DD1C1B96879B25929982 /* Pods */,
+				728DBAA53BCA5D150A67F87F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0D522C0F20F3422B00DD5938 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D522C0E20F3422B00DD5938 /* MyCard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D522C1020F3422B00DD5938 /* MyCard */ = {
+			isa = PBXGroup;
+			children = (
+				0D522C2820F3434500DD5938 /* AppDelegate */,
+				0D522C4A20F34BBB00DD5938 /* Utils */,
+				0D522C2B20F343B800DD5938 /* Vendor */,
+				0D522C2920F3436D00DD5938 /* MCBaseClass */,
+				0D522C2A20F3438700DD5938 /* MCMainClass */,
+				0D522C2720F342FE00DD5938 /* MCAppFiles */,
+				0D522C1A20F3422B00DD5938 /* Assets.xcassets */,
+			);
+			path = MyCard;
+			sourceTree = "<group>";
+		};
+		0D522C2720F342FE00DD5938 /* MCAppFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0D522C1420F3422B00DD5938 /* ViewController.h */,
+				0D522C1520F3422B00DD5938 /* ViewController.m */,
+				0D522C1720F3422B00DD5938 /* Main.storyboard */,
+				0D522C1C20F3422B00DD5938 /* LaunchScreen.storyboard */,
+				0D522C1F20F3422B00DD5938 /* Info.plist */,
+				0D522C2020F3422B00DD5938 /* main.m */,
+				0D522C3620F3491200DD5938 /* MCPrefixHeader.pch */,
+			);
+			path = MCAppFiles;
+			sourceTree = "<group>";
+		};
+		0D522C2820F3434500DD5938 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0D522C1120F3422B00DD5938 /* AppDelegate.h */,
+				0D522C1220F3422B00DD5938 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		0D522C2920F3436D00DD5938 /* MCBaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				0D522C3720F34AF800DD5938 /* MCBaseTabBaeController.h */,
+				0D522C3820F34AF800DD5938 /* MCBaseTabBaeController.m */,
+				0D522C4720F34B9B00DD5938 /* MCBaseNavigationController.h */,
+				0D522C4820F34B9B00DD5938 /* MCBaseNavigationController.m */,
+			);
+			path = MCBaseClass;
+			sourceTree = "<group>";
+		};
+		0D522C2A20F3438700DD5938 /* MCMainClass */ = {
+			isa = PBXGroup;
+			children = (
+				0D522C5220F351BB00DD5938 /* LoginClass */,
+				0D522C3D20F34B2B00DD5938 /* Model */,
+				0D522C3C20F34B2200DD5938 /* MCCell */,
+				0D522C3B20F34B1800DD5938 /* View */,
+				0D522C3A20F34B1100DD5938 /* Controller */,
+			);
+			path = MCMainClass;
+			sourceTree = "<group>";
+		};
+		0D522C2B20F343B800DD5938 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				0D522C8F20F4456C00DD5938 /* HHRunLabelView */,
+				0D522C2C20F343B800DD5938 /* CNPPopupController */,
+				0D522C2F20F343B800DD5938 /* LCProgressHUD */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		0D522C2C20F343B800DD5938 /* CNPPopupController */ = {
+			isa = PBXGroup;
+			children = (
+				0D522C2D20F343B800DD5938 /* CNPPopupController.h */,
+				0D522C2E20F343B800DD5938 /* CNPPopupController.m */,
+			);
+			path = CNPPopupController;
+			sourceTree = "<group>";
+		};
+		0D522C2F20F343B800DD5938 /* LCProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				0D522C3020F343B800DD5938 /* LCProgressHUD.bundle */,
+				0D522C3120F343B800DD5938 /* LCProgressHUD.h */,
+				0D522C3220F343B800DD5938 /* LCProgressHUD.m */,
+			);
+			path = LCProgressHUD;
+			sourceTree = "<group>";
+		};
+		0D522C3A20F34B1100DD5938 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0D522C6820F360DC00DD5938 /* MCHomeViewController.h */,
+				0D522C6920F360DC00DD5938 /* MCHomeViewController.m */,
+				0D522C6A20F360DC00DD5938 /* MCHomeViewController.xib */,
+				0D522C6D20F3B4D900DD5938 /* MCAddCardVC.h */,
+				0D522C6E20F3B4D900DD5938 /* MCAddCardVC.m */,
+				0D522C6F20F3B4D900DD5938 /* MCAddCardVC.xib */,
+				0D522C7820F3BF9900DD5938 /* MCShowViewController.h */,
+				0D522C7920F3BF9900DD5938 /* MCShowViewController.m */,
+				0D522C7A20F3BF9900DD5938 /* MCShowViewController.xib */,
+				0D522C7D20F3C8DB00DD5938 /* MCCardInfoVC.h */,
+				0D522C7E20F3C8DB00DD5938 /* MCCardInfoVC.m */,
+				0D522C7F20F3C8DB00DD5938 /* MCCardInfoVC.xib */,
+				0D522C8220F3CC8700DD5938 /* MCMeViewController.h */,
+				0D522C8320F3CC8700DD5938 /* MCMeViewController.m */,
+				0D522C8A20F4438A00DD5938 /* MCNoticeViewController.h */,
+				0D522C8B20F4438A00DD5938 /* MCNoticeViewController.m */,
+				0D522C8C20F4438A00DD5938 /* MCNoticeViewController.xib */,
+				0D522C9320F44CF000DD5938 /* MCEmailViewController.h */,
+				0D522C9420F44CF000DD5938 /* MCEmailViewController.m */,
+				0D522C9520F44CF000DD5938 /* MCEmailViewController.xib */,
+				0D522C9820F44E1200DD5938 /* MCEmailSurViewController.h */,
+				0D522C9920F44E1200DD5938 /* MCEmailSurViewController.m */,
+				0D522C9A20F44E1200DD5938 /* MCEmailSurViewController.xib */,
+				0D522CA320F45CDC00DD5938 /* MCUserInfoViewController.h */,
+				0D522CA420F45CDC00DD5938 /* MCUserInfoViewController.m */,
+				0D522CA520F45CDC00DD5938 /* MCUserInfoViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0D522C3B20F34B1800DD5938 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D522C9D20F4545300DD5938 /* MCHeaderView.h */,
+				0D522C9E20F4545300DD5938 /* MCHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0D522C3C20F34B2200DD5938 /* MCCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MCCell;
+			sourceTree = "<group>";
+		};
+		0D522C3D20F34B2B00DD5938 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D522C7220F3B5D600DD5938 /* MCModel.h */,
+				0D522C7320F3B5D600DD5938 /* MCModel.m */,
+				0D522C7520F3B67C00DD5938 /* MCDataBase.h */,
+				0D522C7620F3B67C00DD5938 /* MCDataBase.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0D522C4A20F34BBB00DD5938 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0D522C4B20F34BDE00DD5938 /* MCMacros.h */,
+				0D522C4C20F34BF300DD5938 /* MCTools.h */,
+				0D522C4D20F34BF300DD5938 /* MCTools.m */,
+				0D522C4F20F34C0A00DD5938 /* UIColor+MCColor.h */,
+				0D522C5020F34C0A00DD5938 /* UIColor+MCColor.m */,
+				0D522C6520F35F5F00DD5938 /* MCUserHelper.h */,
+				0D522C6620F35F5F00DD5938 /* MCUserHelper.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0D522C5220F351BB00DD5938 /* LoginClass */ = {
+			isa = PBXGroup;
+			children = (
+				0D522C5320F351D300DD5938 /* MCLoginViewController.h */,
+				0D522C5420F351D300DD5938 /* MCLoginViewController.m */,
+				0D522C5520F351D300DD5938 /* MCLoginViewController.xib */,
+				0D522C5820F355CC00DD5938 /* MCRigisterViewController.h */,
+				0D522C5920F355CC00DD5938 /* MCRigisterViewController.m */,
+				0D522C5A20F355CC00DD5938 /* MCRigisterViewController.xib */,
+				0D522C6020F3576B00DD5938 /* MCForgetViewController.h */,
+				0D522C6120F3576B00DD5938 /* MCForgetViewController.m */,
+				0D522C6220F3576B00DD5938 /* MCForgetViewController.xib */,
+			);
+			path = LoginClass;
+			sourceTree = "<group>";
+		};
+		0D522C8F20F4456C00DD5938 /* HHRunLabelView */ = {
+			isa = PBXGroup;
+			children = (
+				0D522C9020F4456C00DD5938 /* RunLabelView.h */,
+				0D522C9120F4456C00DD5938 /* RunLabelView.m */,
+			);
+			path = HHRunLabelView;
+			sourceTree = "<group>";
+		};
+		728DBAA53BCA5D150A67F87F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2206CCC8EB11D9201FEF5972 /* Pods_MyCard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEE2DD1C1B96879B25929982 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7986827B3F42F07E1173AB1 /* Pods-MyCard.debug.xcconfig */,
+				1417B834E60D3E8137C6A27F /* Pods-MyCard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D522C0D20F3422B00DD5938 /* MyCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D522C2420F3422B00DD5938 /* Build configuration list for PBXNativeTarget "MyCard" */;
+			buildPhases = (
+				C7C2F6A90D607231BFFFB51C /* [CP] Check Pods Manifest.lock */,
+				0D522C0A20F3422B00DD5938 /* Sources */,
+				0D522C0B20F3422B00DD5938 /* Frameworks */,
+				0D522C0C20F3422B00DD5938 /* Resources */,
+				17F01E3AB94831DCA3B59646 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCard;
+			productName = MyCard;
+			productReference = 0D522C0E20F3422B00DD5938 /* MyCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D522C0620F3422B00DD5938 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MC;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = caohouhong;
+				TargetAttributes = {
+					0D522C0D20F3422B00DD5938 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 0D522C0920F3422B00DD5938 /* Build configuration list for PBXProject "MyCard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D522C0520F3422B00DD5938;
+			productRefGroup = 0D522C0F20F3422B00DD5938 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D522C0D20F3422B00DD5938 /* MyCard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D522C0C20F3422B00DD5938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D522C8E20F4438A00DD5938 /* MCNoticeViewController.xib in Resources */,
+				0D522C1E20F3422B00DD5938 /* LaunchScreen.storyboard in Resources */,
+				0D522C9C20F44E1200DD5938 /* MCEmailSurViewController.xib in Resources */,
+				0D522C6C20F360DC00DD5938 /* MCHomeViewController.xib in Resources */,
+				0D522C3420F343B800DD5938 /* LCProgressHUD.bundle in Resources */,
+				0D522CA720F45CDD00DD5938 /* MCUserInfoViewController.xib in Resources */,
+				0D522C1B20F3422B00DD5938 /* Assets.xcassets in Resources */,
+				0D522C8120F3C8DB00DD5938 /* MCCardInfoVC.xib in Resources */,
+				0D522C1920F3422B00DD5938 /* Main.storyboard in Resources */,
+				0D522C9720F44CF000DD5938 /* MCEmailViewController.xib in Resources */,
+				0D522C5720F351D300DD5938 /* MCLoginViewController.xib in Resources */,
+				0D522C5C20F355CC00DD5938 /* MCRigisterViewController.xib in Resources */,
+				0D522C7C20F3BF9900DD5938 /* MCShowViewController.xib in Resources */,
+				0D522C7120F3B4D900DD5938 /* MCAddCardVC.xib in Resources */,
+				0D522C6420F3576B00DD5938 /* MCForgetViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17F01E3AB94831DCA3B59646 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyCard/Pods-MyCard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyCard/Pods-MyCard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7C2F6A90D607231BFFFB51C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyCard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D522C0A20F3422B00DD5938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D522C8520F3CC8700DD5938 /* MCMeViewController.m in Sources */,
+				0D522C7020F3B4D900DD5938 /* MCAddCardVC.m in Sources */,
+				0D522C6320F3576B00DD5938 /* MCForgetViewController.m in Sources */,
+				0D522C7B20F3BF9900DD5938 /* MCShowViewController.m in Sources */,
+				0D522C3320F343B800DD5938 /* CNPPopupController.m in Sources */,
+				0D522C8020F3C8DB00DD5938 /* MCCardInfoVC.m in Sources */,
+				0D522C8D20F4438A00DD5938 /* MCNoticeViewController.m in Sources */,
+				0D522C5B20F355CC00DD5938 /* MCRigisterViewController.m in Sources */,
+				0D522C9620F44CF000DD5938 /* MCEmailViewController.m in Sources */,
+				0D522C7420F3B5D600DD5938 /* MCModel.m in Sources */,
+				0D522C3520F343B800DD5938 /* LCProgressHUD.m in Sources */,
+				0D522C1620F3422B00DD5938 /* ViewController.m in Sources */,
+				0D522C3920F34AF800DD5938 /* MCBaseTabBaeController.m in Sources */,
+				0D522C6720F35F5F00DD5938 /* MCUserHelper.m in Sources */,
+				0D522C9B20F44E1200DD5938 /* MCEmailSurViewController.m in Sources */,
+				0D522C4920F34B9B00DD5938 /* MCBaseNavigationController.m in Sources */,
+				0D522C6B20F360DC00DD5938 /* MCHomeViewController.m in Sources */,
+				0D522CA620F45CDC00DD5938 /* MCUserInfoViewController.m in Sources */,
+				0D522C9220F4456C00DD5938 /* RunLabelView.m in Sources */,
+				0D522C2120F3422B00DD5938 /* main.m in Sources */,
+				0D522C4E20F34BF300DD5938 /* MCTools.m in Sources */,
+				0D522C1320F3422B00DD5938 /* AppDelegate.m in Sources */,
+				0D522C7720F3B67C00DD5938 /* MCDataBase.m in Sources */,
+				0D522C9F20F4545300DD5938 /* MCHeaderView.m in Sources */,
+				0D522C5620F351D300DD5938 /* MCLoginViewController.m in Sources */,
+				0D522C5120F34C0A00DD5938 /* UIColor+MCColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0D522C1720F3422B00DD5938 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D522C1820F3422B00DD5938 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0D522C1C20F3422B00DD5938 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D522C1D20F3422B00DD5938 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D522C2220F3422B00DD5938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0D522C2320F3422B00DD5938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D522C2520F3422B00DD5938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7986827B3F42F07E1173AB1 /* Pods-MyCard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2M227336GQ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyCard/MCAppFiles/MCPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/MyCard/MCAppFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rs.mycard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0D522C2620F3422B00DD5938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1417B834E60D3E8137C6A27F /* Pods-MyCard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2M227336GQ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyCard/MCAppFiles/MCPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/MyCard/MCAppFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rs.mycard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D522C0920F3422B00DD5938 /* Build configuration list for PBXProject "MyCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D522C2220F3422B00DD5938 /* Debug */,
+				0D522C2320F3422B00DD5938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D522C2420F3422B00DD5938 /* Build configuration list for PBXNativeTarget "MyCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D522C2520F3422B00DD5938 /* Debug */,
+				0D522C2620F3422B00DD5938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D522C0620F3422B00DD5938 /* Project object */;
+}
