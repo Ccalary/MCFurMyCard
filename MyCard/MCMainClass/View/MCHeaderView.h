@@ -11,4 +11,5 @@
 @interface MCHeaderView : UIView
 @property (nonatomic, strong) UIButton *headerBtn;
 @property (nonatomic, strong) UIButton *loginBtn;
+@property (nonatomic, strong) UILabel *weatherLabel, *locationLabel, *wenduLabel;
 @end

@@ -19,7 +19,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0.0</string>
 	<key>CFBundleVersion</key>
-	<string>2</string>
+	<string>4</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -28,9 +28,11 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>添加卡片时访问相机</string>
+	<string>添加卡片和更改头像时需要访问相机</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>在获取天气状况时需要访问您的位置信息</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>添加卡片时访问相册</string>
+	<string>添加卡片和更改头像时需要访问相册</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

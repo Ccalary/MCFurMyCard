@@ -10,4 +10,5 @@
 
 @interface MCTools : NSObject
 + (BOOL)checkEmail:(NSString *)email;
++ (void)doGetWithCity:(NSString *)city success:(void (^)(NSURLSessionDataTask *operation, NSDictionary *responseDic))success failure:(void (^)(NSURLSessionDataTask *operation, NSError *error))failure;
 @end

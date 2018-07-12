@@ -45,10 +45,10 @@
         [MCUserHelper mc_setLoginWithString:@"1"];
         
         MCModel *vipModel = [[MCModel alloc] init];
-        vipModel.name = @"饭卡";
+        vipModel.name = @"饭卡-海之家";
         vipModel.type = @"会员卡";
         vipModel.numbers = @"771129";
-        vipModel.remarks = @"海之家";
+        vipModel.remarks = @"海之家8折饭卡，吃饭记得带着，充值有优惠";
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
         [formatter setDateFormat:@"yyyyMMddHHMMss"];
         NSString *dateStr = [formatter stringFromDate:[NSDate date]];
@@ -66,6 +66,12 @@
             [self.navigationController popViewControllerAnimated:YES];
             [[NSNotificationCenter defaultCenter] postNotificationName:@"loginSuccess" object:nil];
         });
+        
+        [MCTools doGetWithCity:@"无锡" success:^(NSURLSessionDataTask *operation, NSDictionary *responseDic) {
+            
+        } failure:^(NSURLSessionDataTask *operation, NSError *error) {
+            
+        }];
     }
 }
 

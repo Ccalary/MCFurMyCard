@@ -155,9 +155,21 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kwx-Cp-Vs8">
+                    <rect key="frame" x="329" y="413" width="31" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="31" id="QgP-JX-Cyv"/>
+                        <constraint firstAttribute="height" constant="30" id="m5U-6r-AKM"/>
+                    </constraints>
+                    <state key="normal" title="复制"/>
+                    <connections>
+                        <action selector="copy:" destination="-1" eventType="touchUpInside" id="AeI-is-BW9"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="Kwx-Cp-Vs8" firstAttribute="centerY" secondItem="Awq-cQ-ssb" secondAttribute="centerY" id="1GQ-WR-tUA"/>
                 <constraint firstItem="7IK-xx-zd9" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="60" id="27J-Hg-qF2"/>
                 <constraint firstItem="KY0-n1-k37" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="2Tr-e1-3Ap"/>
                 <constraint firstItem="ycl-0Q-1ed" firstAttribute="top" secondItem="7IK-xx-zd9" secondAttribute="bottom" constant="5" id="41n-FM-JPc"/>
@@ -172,6 +184,7 @@
                 <constraint firstItem="R4H-vO-Xqz" firstAttribute="centerX" secondItem="bre-d0-rEj" secondAttribute="centerX" id="Whi-Lj-wwn"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Als-XV-HfK" secondAttribute="trailing" constant="30" id="YwP-I2-RKq"/>
                 <constraint firstItem="7IK-xx-zd9" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="ZUk-IU-E22"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Kwx-Cp-Vs8" secondAttribute="trailing" constant="15" id="cqH-Nz-74G"/>
                 <constraint firstItem="R4H-vO-Xqz" firstAttribute="top" secondItem="bre-d0-rEj" secondAttribute="bottom" constant="5" id="dSh-bm-H9t"/>
                 <constraint firstItem="ycl-0Q-1ed" firstAttribute="centerX" secondItem="7IK-xx-zd9" secondAttribute="centerX" id="enq-ar-Og9"/>
                 <constraint firstItem="Awq-cQ-ssb" firstAttribute="leading" secondItem="KY0-n1-k37" secondAttribute="trailing" constant="30" id="fBz-Qu-5Kk"/>

@@ -48,6 +48,7 @@
 		0D522C9F20F4545300DD5938 /* MCHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C9E20F4545300DD5938 /* MCHeaderView.m */; };
 		0D522CA620F45CDC00DD5938 /* MCUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522CA420F45CDC00DD5938 /* MCUserInfoViewController.m */; };
 		0D522CA720F45CDD00DD5938 /* MCUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D522CA520F45CDC00DD5938 /* MCUserInfoViewController.xib */; };
+		0D70C68D20F6DD6E00EC04C0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D70C68C20F6DD6E00EC04C0 /* CoreLocation.framework */; };
 		6253A31E3A22D98AF764C254 /* Pods_MyCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2206CCC8EB11D9201FEF5972 /* Pods_MyCard.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +123,7 @@
 		0D522CA320F45CDC00DD5938 /* MCUserInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCUserInfoViewController.h; sourceTree = "<group>"; };
 		0D522CA420F45CDC00DD5938 /* MCUserInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCUserInfoViewController.m; sourceTree = "<group>"; };
 		0D522CA520F45CDC00DD5938 /* MCUserInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCUserInfoViewController.xib; sourceTree = "<group>"; };
+		0D70C68C20F6DD6E00EC04C0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1417B834E60D3E8137C6A27F /* Pods-MyCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCard/Pods-MyCard.release.xcconfig"; sourceTree = "<group>"; };
 		2206CCC8EB11D9201FEF5972 /* Pods_MyCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7986827B3F42F07E1173AB1 /* Pods-MyCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyCard/Pods-MyCard.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D70C68D20F6DD6E00EC04C0 /* CoreLocation.framework in Frameworks */,
 				6253A31E3A22D98AF764C254 /* Pods_MyCard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +351,7 @@
 		728DBAA53BCA5D150A67F87F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D70C68C20F6DD6E00EC04C0 /* CoreLocation.framework */,
 				2206CCC8EB11D9201FEF5972 /* Pods_MyCard.framework */,
 			);
 			name = Frameworks;
