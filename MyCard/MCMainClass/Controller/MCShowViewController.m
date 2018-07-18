@@ -10,6 +10,8 @@
 #import "MCModel.h"
 #import "MCDataBase.h"
 #import "MCCardInfoVC.h"
+#import "MCShowTableViewCell.h"
+#import "MCPopView.h"
 
 @interface MCShowViewController ()<UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate>
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
@@ -30,7 +32,10 @@
     self.searchArray = [NSMutableArray array];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.searchBar.delegate = self;
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"筛选" style:UIBarButtonItemStylePlain target:self action:@selector(rightBarAction)];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -63,13 +68,12 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = (UITableViewCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    MCShowTableViewCell *cell = (MCShowTableViewCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[MCShowTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     MCModel *model = _isSearch ? self.searchArray[indexPath.row] : self.dataArray[indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@--%@",model.name,model.type];
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.model = model;
     return cell;
 }
 
@@ -79,6 +83,10 @@
     MCCardInfoVC *vc = [[MCCardInfoVC alloc] init];
     vc.model = model;
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 120;
 }
 
 - (void)requestData {
@@ -119,7 +127,7 @@
     //定义搜索谓词
 //    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF CONTAINS[c] %@", substr];
     [self.searchArray removeAllObjects];
-    if (substr.length == 0){
+    if (substr.length == 0 || [substr isEqualToString:@"全部"]){
         [self.searchArray addObjectsFromArray:self.dataArray];
     }else {
         //使用谓词过滤NSArray
@@ -133,4 +141,12 @@
     [self.tableView reloadData];
 }
 
+- (void)rightBarAction {
+    MCPopView *popView = [[MCPopView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
+    __weak typeof (self) weakSelf = self;
+    popView.block = ^(NSString *name) {
+        [weakSelf filterBySubstring:name];
+    };
+    [popView pop];
+}
 @end

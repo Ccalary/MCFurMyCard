@@ -45,7 +45,7 @@
         make.top.mas_equalTo(self.view).offset(-NavigationBarHeight);
         make.left.right.bottom.mas_equalTo(self.view);
     }];
-    self.sourceArray = @[@"个人资料",@"绑定邮箱",@"公告",@"版本",@"退出登录"];
+    self.sourceArray = @[@"个人资料",@"举报",@"公告",@"版本",@"退出登录"];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginSuccessNotice) name:@"loginSuccess" object:nil];
     

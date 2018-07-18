@@ -42,13 +42,16 @@
 		0D522C8E20F4438A00DD5938 /* MCNoticeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D522C8C20F4438A00DD5938 /* MCNoticeViewController.xib */; };
 		0D522C9220F4456C00DD5938 /* RunLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C9120F4456C00DD5938 /* RunLabelView.m */; };
 		0D522C9620F44CF000DD5938 /* MCEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C9420F44CF000DD5938 /* MCEmailViewController.m */; };
-		0D522C9720F44CF000DD5938 /* MCEmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D522C9520F44CF000DD5938 /* MCEmailViewController.xib */; };
 		0D522C9B20F44E1200DD5938 /* MCEmailSurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C9920F44E1200DD5938 /* MCEmailSurViewController.m */; };
 		0D522C9C20F44E1200DD5938 /* MCEmailSurViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D522C9A20F44E1200DD5938 /* MCEmailSurViewController.xib */; };
 		0D522C9F20F4545300DD5938 /* MCHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C9E20F4545300DD5938 /* MCHeaderView.m */; };
 		0D522CA620F45CDC00DD5938 /* MCUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522CA420F45CDC00DD5938 /* MCUserInfoViewController.m */; };
 		0D522CA720F45CDD00DD5938 /* MCUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D522CA520F45CDC00DD5938 /* MCUserInfoViewController.xib */; };
 		0D70C68D20F6DD6E00EC04C0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D70C68C20F6DD6E00EC04C0 /* CoreLocation.framework */; };
+		0DB6903A20FEEE5D0048C4DC /* SendCodeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB6903920FEEE5C0048C4DC /* SendCodeButton.m */; };
+		0DB6903D20FF07950048C4DC /* MCProtocolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB6903C20FF07950048C4DC /* MCProtocolViewController.m */; };
+		0DCA77F820F83EE4008844CC /* MCShowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCA77F720F83EE4008844CC /* MCShowTableViewCell.m */; };
+		0DCA77FB20F84938008844CC /* MCPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCA77FA20F84938008844CC /* MCPopView.m */; };
 		6253A31E3A22D98AF764C254 /* Pods_MyCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2206CCC8EB11D9201FEF5972 /* Pods_MyCard.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,7 +117,6 @@
 		0D522C9120F4456C00DD5938 /* RunLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLabelView.m; sourceTree = "<group>"; };
 		0D522C9320F44CF000DD5938 /* MCEmailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCEmailViewController.h; sourceTree = "<group>"; };
 		0D522C9420F44CF000DD5938 /* MCEmailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCEmailViewController.m; sourceTree = "<group>"; };
-		0D522C9520F44CF000DD5938 /* MCEmailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCEmailViewController.xib; sourceTree = "<group>"; };
 		0D522C9820F44E1200DD5938 /* MCEmailSurViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCEmailSurViewController.h; sourceTree = "<group>"; };
 		0D522C9920F44E1200DD5938 /* MCEmailSurViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCEmailSurViewController.m; sourceTree = "<group>"; };
 		0D522C9A20F44E1200DD5938 /* MCEmailSurViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCEmailSurViewController.xib; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 		0D522CA420F45CDC00DD5938 /* MCUserInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCUserInfoViewController.m; sourceTree = "<group>"; };
 		0D522CA520F45CDC00DD5938 /* MCUserInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCUserInfoViewController.xib; sourceTree = "<group>"; };
 		0D70C68C20F6DD6E00EC04C0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0DB6903820FEEE5C0048C4DC /* SendCodeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendCodeButton.h; sourceTree = "<group>"; };
+		0DB6903920FEEE5C0048C4DC /* SendCodeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendCodeButton.m; sourceTree = "<group>"; };
+		0DB6903B20FF07950048C4DC /* MCProtocolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCProtocolViewController.h; sourceTree = "<group>"; };
+		0DB6903C20FF07950048C4DC /* MCProtocolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCProtocolViewController.m; sourceTree = "<group>"; };
+		0DCA77F620F83EE4008844CC /* MCShowTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCShowTableViewCell.h; sourceTree = "<group>"; };
+		0DCA77F720F83EE4008844CC /* MCShowTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCShowTableViewCell.m; sourceTree = "<group>"; };
+		0DCA77F920F84938008844CC /* MCPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCPopView.h; sourceTree = "<group>"; };
+		0DCA77FA20F84938008844CC /* MCPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCPopView.m; sourceTree = "<group>"; };
 		1417B834E60D3E8137C6A27F /* Pods-MyCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCard/Pods-MyCard.release.xcconfig"; sourceTree = "<group>"; };
 		2206CCC8EB11D9201FEF5972 /* Pods_MyCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7986827B3F42F07E1173AB1 /* Pods-MyCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyCard/Pods-MyCard.debug.xcconfig"; sourceTree = "<group>"; };
@@ -223,6 +233,7 @@
 		0D522C2B20F343B800DD5938 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				0DB6903720FEEE5C0048C4DC /* MCSendCodeButton */,
 				0D522C8F20F4456C00DD5938 /* HHRunLabelView */,
 				0D522C2C20F343B800DD5938 /* CNPPopupController */,
 				0D522C2F20F343B800DD5938 /* LCProgressHUD */,
@@ -271,7 +282,6 @@
 				0D522C8C20F4438A00DD5938 /* MCNoticeViewController.xib */,
 				0D522C9320F44CF000DD5938 /* MCEmailViewController.h */,
 				0D522C9420F44CF000DD5938 /* MCEmailViewController.m */,
-				0D522C9520F44CF000DD5938 /* MCEmailViewController.xib */,
 				0D522C9820F44E1200DD5938 /* MCEmailSurViewController.h */,
 				0D522C9920F44E1200DD5938 /* MCEmailSurViewController.m */,
 				0D522C9A20F44E1200DD5938 /* MCEmailSurViewController.xib */,
@@ -287,6 +297,8 @@
 			children = (
 				0D522C9D20F4545300DD5938 /* MCHeaderView.h */,
 				0D522C9E20F4545300DD5938 /* MCHeaderView.m */,
+				0DCA77F920F84938008844CC /* MCPopView.h */,
+				0DCA77FA20F84938008844CC /* MCPopView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -294,6 +306,8 @@
 		0D522C3C20F34B2200DD5938 /* MCCell */ = {
 			isa = PBXGroup;
 			children = (
+				0DCA77F620F83EE4008844CC /* MCShowTableViewCell.h */,
+				0DCA77F720F83EE4008844CC /* MCShowTableViewCell.m */,
 			);
 			path = MCCell;
 			sourceTree = "<group>";
@@ -335,6 +349,8 @@
 				0D522C6020F3576B00DD5938 /* MCForgetViewController.h */,
 				0D522C6120F3576B00DD5938 /* MCForgetViewController.m */,
 				0D522C6220F3576B00DD5938 /* MCForgetViewController.xib */,
+				0DB6903B20FF07950048C4DC /* MCProtocolViewController.h */,
+				0DB6903C20FF07950048C4DC /* MCProtocolViewController.m */,
 			);
 			path = LoginClass;
 			sourceTree = "<group>";
@@ -346,6 +362,15 @@
 				0D522C9120F4456C00DD5938 /* RunLabelView.m */,
 			);
 			path = HHRunLabelView;
+			sourceTree = "<group>";
+		};
+		0DB6903720FEEE5C0048C4DC /* MCSendCodeButton */ = {
+			isa = PBXGroup;
+			children = (
+				0DB6903820FEEE5C0048C4DC /* SendCodeButton.h */,
+				0DB6903920FEEE5C0048C4DC /* SendCodeButton.m */,
+			);
+			path = MCSendCodeButton;
 			sourceTree = "<group>";
 		};
 		728DBAA53BCA5D150A67F87F /* Frameworks */ = {
@@ -435,7 +460,6 @@
 				0D522C1B20F3422B00DD5938 /* Assets.xcassets in Resources */,
 				0D522C8120F3C8DB00DD5938 /* MCCardInfoVC.xib in Resources */,
 				0D522C1920F3422B00DD5938 /* Main.storyboard in Resources */,
-				0D522C9720F44CF000DD5938 /* MCEmailViewController.xib in Resources */,
 				0D522C5720F351D300DD5938 /* MCLoginViewController.xib in Resources */,
 				0D522C5C20F355CC00DD5938 /* MCRigisterViewController.xib in Resources */,
 				0D522C7C20F3BF9900DD5938 /* MCShowViewController.xib in Resources */,
@@ -504,10 +528,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DB6903D20FF07950048C4DC /* MCProtocolViewController.m in Sources */,
 				0D522C8520F3CC8700DD5938 /* MCMeViewController.m in Sources */,
 				0D522C7020F3B4D900DD5938 /* MCAddCardVC.m in Sources */,
+				0DCA77F820F83EE4008844CC /* MCShowTableViewCell.m in Sources */,
 				0D522C6320F3576B00DD5938 /* MCForgetViewController.m in Sources */,
+				0DCA77FB20F84938008844CC /* MCPopView.m in Sources */,
 				0D522C7B20F3BF9900DD5938 /* MCShowViewController.m in Sources */,
+				0DB6903A20FEEE5D0048C4DC /* SendCodeButton.m in Sources */,
 				0D522C3320F343B800DD5938 /* CNPPopupController.m in Sources */,
 				0D522C8020F3C8DB00DD5938 /* MCCardInfoVC.m in Sources */,
 				0D522C8D20F4438A00DD5938 /* MCNoticeViewController.m in Sources */,

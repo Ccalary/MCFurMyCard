@@ -7,10 +7,13 @@
 //
 
 #import "MCRigisterViewController.h"
+#import "SendCodeButton.h"
+#import "MCProtocolViewController.h"
 
-@interface MCRigisterViewController ()
+@interface MCRigisterViewController ()<SendCodeButtonDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *name;
 @property (weak, nonatomic) IBOutlet UITextField *password;
+@property (weak, nonatomic) IBOutlet UITextField *code;
 
 @end
 
@@ -19,20 +22,39 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"注册";
-    
+    SendCodeButton *button = [[SendCodeButton alloc] initWithTitle:@"发送验证码" seconds:60];
+    [button setTitleColor:[UIColor mc_themeColor] forState:UIControlStateNormal];
+    button.delegate = self;
+    [self.view addSubview:button];
+    [button mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.code.mas_right).offset(10);
+        make.right.mas_equalTo(self.view).offset(-15);
+        make.centerY.mas_equalTo(self.code);
+        make.height.mas_equalTo(40);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-- (IBAction)registerAction:(id)sender {
-    if ([MCTools checkEmail:self.name.text]){
-        [LCProgressHUD showKeyWindowSuccess:@"信息已发送到邮箱"];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self.navigationController popToRootViewControllerAnimated:YES];
-        });
+
+- (void)sendCodeButtonClick{
+    if (self.name.text.length != 11){
+        [LCProgressHUD showFailure:@"请输入正确的手机号"];
     }else {
-         [LCProgressHUD showFailure:@"邮箱地址不正确"];
+        [MCTools doGetWithCity:@"无锡" success:^(NSURLSessionDataTask *operation, NSDictionary *responseDic) {
+            [LCProgressHUD showSuccess:@"验证码发送成功"];
+        } failure:^(NSURLSessionDataTask *operation, NSError *error) {
+            
+        }];
     }
+}
+- (IBAction)protocolAction:(UIButton *)sender {
+    MCProtocolViewController *vc = [[MCProtocolViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+- (IBAction)registerAction:(id)sender {
+    [LCProgressHUD showFailure:@"验证码不正确"];
 }
 @end

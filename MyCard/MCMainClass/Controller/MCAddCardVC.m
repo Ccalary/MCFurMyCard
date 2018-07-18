@@ -120,7 +120,7 @@
 {
     [picker dismissViewControllerAnimated:YES completion:nil];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyyMMddHHMMss"];
+    [formatter setDateFormat:@"yyyy.MM.dd HH:MM:ss"];
     NSString *dateStr = [formatter stringFromDate:[NSDate date]];
     self.model.addTime = dateStr;
     

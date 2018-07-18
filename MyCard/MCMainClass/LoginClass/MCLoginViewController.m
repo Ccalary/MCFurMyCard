@@ -37,11 +37,9 @@
 
 - (IBAction)loginAction:(id)sender {
     
-    
-    
-    if ([self.name.text isEqualToString:@"stone"] && [self.password.text isEqualToString:@"123456"]){
+    if ([self.name.text isEqualToString:@"13773047057"] && [self.password.text isEqualToString:@"123456"]){
         [LCProgressHUD showSuccess:@"登录成功"];
-        [MCUserHelper mc_setUserName:@"stone"];
+        [MCUserHelper mc_setUserName:@"13773047057"];
         [MCUserHelper mc_setLoginWithString:@"1"];
         
         MCModel *vipModel = [[MCModel alloc] init];
@@ -50,7 +48,7 @@
         vipModel.numbers = @"771129";
         vipModel.remarks = @"海之家8折饭卡，吃饭记得带着，充值有优惠";
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-        [formatter setDateFormat:@"yyyyMMddHHMMss"];
+        [formatter setDateFormat:@"yyyy.MM.dd HH:MM:ss"];
         NSString *dateStr = [formatter stringFromDate:[NSDate date]];
         vipModel.addTime = dateStr;
         UIImage *imageFront = [UIImage imageNamed:@"vip_front"];
@@ -62,7 +60,50 @@
         
         [[MCDataBase sharedDataBase] addMCModel:vipModel];
         
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+           
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                MCModel *vipModel = [[MCModel alloc] init];
+                vipModel.name = @"公交卡";
+                vipModel.type = @"电子卡";
+                vipModel.numbers = @"64401502407";
+                vipModel.remarks = @"无锡公交出行8折卡";
+                NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+                [formatter setDateFormat:@"yyyy.MM.dd HH:MM:ss"];
+                NSString *dateStr = [formatter stringFromDate:[NSDate date]];
+                vipModel.addTime = dateStr;
+                UIImage *imageFront = [UIImage imageNamed:@"ecard_front"];
+                NSData *data = UIImageJPEGRepresentation(imageFront, 0.1);
+                [MCUserHelper mc_setImageData:data WithKey:[NSString stringWithFormat:@"front%@",dateStr]];
+                UIImage *imageback = [UIImage imageNamed:@"ecard_back"];
+                NSData *dataBack = UIImageJPEGRepresentation(imageback, 0.1);
+                [MCUserHelper mc_setImageData:dataBack WithKey:[NSString stringWithFormat:@"back%@",dateStr]];
+                
+                [[MCDataBase sharedDataBase] addMCModel:vipModel];
+            });
+            
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                MCModel *vipModel = [[MCModel alloc] init];
+                vipModel.name = @"招商银行";
+                vipModel.type = @"储蓄卡";
+                vipModel.numbers = @"6214830151569869";
+                vipModel.remarks = @"招商银行开户点北京天通苑分行";
+                NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+                [formatter setDateFormat:@"yyyy.MM.dd HH:MM:ss"];
+                NSString *dateStr = [formatter stringFromDate:[NSDate date]];
+                vipModel.addTime = dateStr;
+                UIImage *imageFront = [UIImage imageNamed:@"bank_front"];
+                NSData *data = UIImageJPEGRepresentation(imageFront, 0.1);
+                [MCUserHelper mc_setImageData:data WithKey:[NSString stringWithFormat:@"front%@",dateStr]];
+                UIImage *imageback = [UIImage imageNamed:@"back_back"];
+                NSData *dataBack = UIImageJPEGRepresentation(imageback, 0.1);
+                [MCUserHelper mc_setImageData:dataBack WithKey:[NSString stringWithFormat:@"back%@",dateStr]];
+                
+                [[MCDataBase sharedDataBase] addMCModel:vipModel];
+            });
+        });
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self.navigationController popViewControllerAnimated:YES];
             [[NSNotificationCenter defaultCenter] postNotificationName:@"loginSuccess" object:nil];
         });
