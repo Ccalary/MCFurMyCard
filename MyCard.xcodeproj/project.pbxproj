@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D2929ED2100DC210073E1F9 /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2929EC2100DC210073E1F9 /* BaseWebViewController.m */; };
 		0D522C1320F3422B00DD5938 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C1220F3422B00DD5938 /* AppDelegate.m */; };
 		0D522C1620F3422B00DD5938 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D522C1520F3422B00DD5938 /* ViewController.m */; };
 		0D522C1920F3422B00DD5938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D522C1720F3422B00DD5938 /* Main.storyboard */; };
@@ -56,6 +57,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D2929EB2100DC210073E1F9 /* BaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebViewController.h; sourceTree = "<group>"; };
+		0D2929EC2100DC210073E1F9 /* BaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewController.m; sourceTree = "<group>"; };
 		0D522C0E20F3422B00DD5938 /* MyCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D522C1120F3422B00DD5938 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0D522C1220F3422B00DD5938 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -210,6 +213,8 @@
 		0D522C2920F3436D00DD5938 /* MCBaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				0D2929EB2100DC210073E1F9 /* BaseWebViewController.h */,
+				0D2929EC2100DC210073E1F9 /* BaseWebViewController.m */,
 				0D522C3720F34AF800DD5938 /* MCBaseTabBaeController.h */,
 				0D522C3820F34AF800DD5938 /* MCBaseTabBaeController.m */,
 				0D522C4720F34B9B00DD5938 /* MCBaseNavigationController.h */,
@@ -550,6 +555,7 @@
 				0D522C4920F34B9B00DD5938 /* MCBaseNavigationController.m in Sources */,
 				0D522C6B20F360DC00DD5938 /* MCHomeViewController.m in Sources */,
 				0D522CA620F45CDC00DD5938 /* MCUserInfoViewController.m in Sources */,
+				0D2929ED2100DC210073E1F9 /* BaseWebViewController.m in Sources */,
 				0D522C9220F4456C00DD5938 /* RunLabelView.m in Sources */,
 				0D522C2120F3422B00DD5938 /* main.m in Sources */,
 				0D522C4E20F34BF300DD5938 /* MCTools.m in Sources */,

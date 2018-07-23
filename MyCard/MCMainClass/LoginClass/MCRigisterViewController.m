@@ -9,6 +9,7 @@
 #import "MCRigisterViewController.h"
 #import "SendCodeButton.h"
 #import "MCProtocolViewController.h"
+#import "BaseWebViewController.h"
 
 @interface MCRigisterViewController ()<SendCodeButtonDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *name;
@@ -56,5 +57,11 @@
 }
 - (IBAction)registerAction:(id)sender {
     [LCProgressHUD showFailure:@"验证码不正确"];
+}
+
+// 隐私政策
+- (IBAction)secretAction:(UIButton *)sender {
+    BaseWebViewController *vc = [[BaseWebViewController alloc] initWithTitle:@"隐私政策" andUrl:@"https://ccalary.github.io/MCWebsite/"];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 @end

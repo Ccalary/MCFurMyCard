@@ -47,9 +47,7 @@
         vipModel.type = @"会员卡";
         vipModel.numbers = @"771129";
         vipModel.remarks = @"海之家8折饭卡，吃饭记得带着，充值有优惠";
-        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-        [formatter setDateFormat:@"yyyy.MM.dd HH:MM:ss"];
-        NSString *dateStr = [formatter stringFromDate:[NSDate date]];
+        NSString *dateStr = @"2018.07.01 11:00:00";
         vipModel.addTime = dateStr;
         UIImage *imageFront = [UIImage imageNamed:@"vip_front"];
         NSData *data = UIImageJPEGRepresentation(imageFront, 0.1);
@@ -62,15 +60,13 @@
         
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
            
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 MCModel *vipModel = [[MCModel alloc] init];
                 vipModel.name = @"公交卡";
                 vipModel.type = @"电子卡";
                 vipModel.numbers = @"64401502407";
                 vipModel.remarks = @"无锡公交出行8折卡";
-                NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-                [formatter setDateFormat:@"yyyy.MM.dd HH:MM:ss"];
-                NSString *dateStr = [formatter stringFromDate:[NSDate date]];
+                NSString *dateStr = @"2018.05.18 12:00:01";
                 vipModel.addTime = dateStr;
                 UIImage *imageFront = [UIImage imageNamed:@"ecard_front"];
                 NSData *data = UIImageJPEGRepresentation(imageFront, 0.1);
@@ -88,9 +84,7 @@
                 vipModel.type = @"储蓄卡";
                 vipModel.numbers = @"6214830151569869";
                 vipModel.remarks = @"招商银行开户点北京天通苑分行";
-                NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-                [formatter setDateFormat:@"yyyy.MM.dd HH:MM:ss"];
-                NSString *dateStr = [formatter stringFromDate:[NSDate date]];
+                NSString *dateStr = @"2018.06.18 13:45:01";
                 vipModel.addTime = dateStr;
                 UIImage *imageFront = [UIImage imageNamed:@"bank_front"];
                 NSData *data = UIImageJPEGRepresentation(imageFront, 0.1);
